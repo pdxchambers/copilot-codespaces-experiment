@@ -1,9 +1,9 @@
 import axios from 'axios';
 
 // Load environment variables
-const { CLIENT_ID, CLIENT_SECRET } = process.env;
+const { CLIENT_ID, CLIENT_SECRET, BASE_URL } = process.env;
 
-const BASE_URL = 'https://us.api.blizzard.com';
+// const BASE_URL = 'https://us.api.blizzard.com';
 
 const getAccessToken = async () => {
   const response = await axios.post('https://us.battle.net/oauth/token', null, {
